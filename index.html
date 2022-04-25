@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,38 @@
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- título de página -->
-    <title>Título de la página</title>
+    <title>App Propinas</title>
     <!-- ícono de pàgina -->
     <!-- fuentes -->
     <!-- javascript -->
+    <script src="js/main.js"></script>
 </head>
-<body>
-<div class="row">
-    <div class="column-1">
-        <p>1</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>2</p>
-    </div>
-    <div class="column-2">
-        <p>3</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-4">
-        <p>4</p>
-    </div>
-    <div class="column-4">
-        <p>5</p>
-    </div>
-    <div class="column-4">
-        <p>6</p>
-    </div>
-    <div class="column-4">
-        <p>7</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>8</p>
-    </div>
-    <div class="column-2">
-        <p>9</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-3">
-        <p>10</p>
-    </div>
-    <div class="column-3">
-        <p>11</p>
-    </div>
-    <div class="column-3">
-        <p>12</p>
-    </div>
-</div>
 
+<body class="flex">
+    <div>
+        <div class="row bordes">
+            <div class="column-1">
+                <h1>Calculador de propinas</h1>
+            </div>
+        </div>
+        <div class="column-1">
+            <label for="">Total de la cuenta</label><br>
+            <input type="number" placeholder="Inserte un valor..." id="total">
+            <label for="">¿Que tal el servicio?</label><br>
+            <select name="" id="servicio">
+                <option value="0">0% Pesimo</option>
+                <option value="0.15">15% Bueno</option>  
+                <option value="0.30">30% Excelente</option>
+            </select>
+            <br>
+            <label for="">¿Cuantas personas van a pagar?</label><br>
+            <select name="" id="personas">
+               <option value="">4</option>
+           </select><br>
+            <input type="submit" value="Calcular" onclick="calcProp()">
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
