@@ -8,47 +8,35 @@
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- título de página -->
-    <title>App-propinas</title>
+    <title>App Propinas</title>
     <!-- ícono de pàgina -->
-    <link rel="shortcut icon" href="img/istockphoto-1333505917-612x612.jpg" type="image/x-icon">
     <!-- fuentes -->
-    <link rel="stylesheet" href="">
     <!-- javascript -->
     <script src="js/main.js"></script>
 </head>
 
 <body class="flex">
-    <div>
-        <div class="row">
-            <div class="column-1">
-                <h1>Calculador de propinas</h1>
-            </div>
+    <div class="row bordes">
+        <!-- Nombre de la app (funcionalidad) -->
+        <div class="column-1">
+            <h1>Calculador de propinas</h1>
         </div>
-        <div class="row aling">
-            <div class="column-1">
-                <label for="">Total de la cuenta</label>
-                <input type="number" placeholder="Inserte un valor" id="total">
-            </div><br>
-            <div class="column-1">
-                <label for="">¿Que tal el servidor?</label>
-                <select name="" id="servicio">
-                <option value="0">0% Horrible</option>
-                <option value="0.15">15% Bien</option>
-                <option value="0.30">30% Excelente</option>
+        <!-- formulario de la app -->
+        <div class="column-1">
+            <input type="number" name="" id="total" placeholder="total de la cuenta...">
+            <br>
+            <select name="" id="servicio">
+                <option value="0">0% pésimo</option>
+                <option value="0.15">15% bueno</option>
+                <option value="0.30">30% excelente</option>
             </select>
-            </div><br>
-            <div class="column-1">
-                <label for="">¿Cuantas personas van a pagar?</label>
-                <input type="number" placeholder="Numero de personas" id="personas">
-            </div><br>
-            <div class="column-1">
-                <input type="submit" value="Calcular" onclick="calcProp()">
-            </div><br>
-            <div class="column-1">
-                <p id="resultado"></p>
-            </div>
+            <br>
+            <input type="number" name="" id="personas" placeholder="¿cuantas personas van a pagar?">
+            <br>
+            <input type="submit" value="calcular" onclick="calcProp()">
         </div>
     </div>
+
 </body>
 
 </html>
